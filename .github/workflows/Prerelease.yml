@@ -11,8 +11,6 @@ jobs:
     name: "Pre Release"
     runs-on: "ubuntu-latest"
 
-    runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Install Deps
