@@ -29,6 +29,7 @@ jobs:
 
   windows_build:
     runs-on: windows-latest
+    - uses: actions/checkout@v2
     steps:
     - name: Build
       run: cargo build --verbose
