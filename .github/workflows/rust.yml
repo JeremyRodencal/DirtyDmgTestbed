@@ -2,9 +2,9 @@ name: Rust
 
 on:
   push:
-    branches: [ master ]
+    branches: [ asdf ]
   pull_request:
-    branches: [ master ]
+    branches: [ asdf ]
 
 env:
   CARGO_TERM_COLOR: always
@@ -29,7 +29,7 @@ jobs:
 
   windows_build:
     runs-on: windows-latest
-    - uses: actions/checkout@v2
     steps:
+    - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose
