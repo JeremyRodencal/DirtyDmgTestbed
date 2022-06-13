@@ -26,3 +26,9 @@ jobs:
       run: cargo test --verbose
     - name: cargo clippy 
       run: cargo clippy -- -D warnings
+
+  windows_build:
+    runs-on: windows-latest
+    steps:
+    - name: Build
+      run: cargo build --verbose
